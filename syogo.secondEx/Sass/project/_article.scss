@@ -1,0 +1,488 @@
+@use "../global" as *;
+
+.p-article {
+  margin: 49px 0 0 0;
+  padding-bottom: 32px;
+  &1 {
+    background-image: url(../../画像/img/bg.jpg);
+    width: 100%;
+    padding-bottom: 80px;
+
+    &__text {
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      @include sp {
+        writing-mode: unset;
+      }
+    }
+    h2 {
+      letter-spacing: 1.4rem;
+      @include sp {
+        margin-left: 4%;
+      }
+      &:nth-of-type(1) {
+        margin-top: 65px;
+        @include sp {
+          margin-top: 0;
+          padding-top: 70px;
+        }
+      }
+      &:nth-of-type(2) {
+        margin-top: 165px;
+        margin-right: 9%;
+        @include pc2 {
+          margin-right: 2%;
+        }
+        @include sp {
+          margin-top: 0;
+        }
+      }
+    }
+    h3 {
+      letter-spacing: 1.4rem;
+      text-align: end;
+      margin-right: 24%;
+      @include pc2 {
+        margin-right: 3%;
+      }
+      @include sp {
+        margin-top: 20px;
+        text-align: end;
+      }
+    }
+  }
+  &__2colum {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 106px;
+    @include pc3 {
+      margin-right: 0px;
+    }
+    @include tab {
+      flex-direction: column;
+    }
+    &-img {
+      width: 55%;
+      @include tab {
+        width: 72%;
+        margin: 0 auto;
+        margin-top: 50px;
+      }
+    }
+    &2,
+    &3 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 80px;
+
+      height: 540px;
+      width: 100%;
+      position: relative;
+      @include pc3 {
+        margin-right: 0px;
+      }
+      @include tab {
+        flex-direction: column;
+      }
+
+      &-img {
+        width: 45%;
+        position: absolute;
+        height: auto;
+        @include pc4 {
+          width: 70%;
+          left: 15%;
+        }
+        @include tab {
+          width: 70%;
+          margin: 0 auto;
+          margin-top: 50px;
+        }
+        @include sp {
+          width: 80%;
+          left: 10%;
+        }
+      }
+      &-section {
+        position: absolute;
+        background: url(../../画像/img/bg.jpg);
+        width: 50%;
+        z-index: -1;
+        height: auto;
+
+        h7 {
+          @include sp2 {
+            font-size: 2rem;
+          }
+          @include sp {
+            font-size: 1.4em;
+          }
+        }
+        p {
+          font-size: 1.4rem;
+          @include sp {
+            font-size: 1.2rem;
+          }
+          &:nth-of-type(1) {
+            margin: 40px 0 20px 0px;
+          }
+          br {
+            @include sp {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &2 {
+      &-section {
+        top: 12%;
+        left: 27%;
+        padding: 60px 38px 110px 240px;
+        @include pc4 {
+          top: 40%;
+          left: 15%;
+          padding: 28% 10% 10% 10%;
+        }
+        @include sp {
+          top: 20%;
+          left: 10%;
+          padding: 40% 15% 10% 15%;
+        }
+        br {
+          display: none;
+          @include sp {
+            display: flex;
+          }
+        }
+        h7 {
+          @include tab {
+            font-size: 2.1rem;
+          }
+        }
+      }
+    }
+    &3 {
+      @include pc4 {
+        margin-top: 350px;
+      }
+      @include sp {
+        margin-top: 120px;
+      }
+      &-img {
+        right: 0%;
+        @include pc4 {
+          right: 15%;
+        }
+      }
+      &-section {
+        top: 12%;
+        left: 0%;
+        padding: 60px 240px 110px 71px;
+        @include pc4 {
+          top: 45%;
+          left: 15%;
+          padding: 25% 10% 10% 10%;
+        }
+        @include sp {
+          top: 20%;
+          left: 10%;
+          padding: 40% 15% 10% 15%;
+        }
+        br {
+          display: none;
+          @include sp {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+  &__section,
+  &__section2 {
+    p {
+      margin: 75px 0;
+      @include tab {
+        margin: 75px 10%;
+        text-align: center;
+      }
+      br {
+        @include sp {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__mark {
+    width: 40px;
+    margin: 0 0 0 48%;
+  }
+
+  &2 {
+    background-image: url(../../画像/img/bg02.jpg);
+    background-repeat: round;
+
+    margin-top: 92px;
+    padding: 46px 0 158px 0;
+    h1 {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 20px;
+      @include sp {
+        font-size: 3rem;
+      }
+    }
+    h4 {
+      margin: 12px 0 32px 0;
+    }
+
+    &__3colum {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+      margin-top: 65px;
+      @include sp {
+        flex-direction: column;
+        margin-top: 25px;
+      }
+
+      li {
+        width: 33%;
+        @include sp {
+          width: 98%;
+          margin-top: 25%;
+        }
+        margin-left: 2%;
+        img {
+          width: 88%;
+          @include sp {
+            width: 98%;
+          }
+        }
+        br {
+          @include pc2 {
+            display: none;
+          }
+        }
+      }
+      p {
+        @include sp {
+          width: 98%;
+        }
+      }
+    }
+  }
+  &3 {
+    margin-top: 50px;
+    h1 {
+      text-align: center;
+    }
+    &__menu {
+      display: flex;
+      justify-content: center;
+      li {
+        margin-top: 45px;
+        cursor: pointer;
+        &:nth-of-type(1) {
+          text-decoration: underline;
+        }
+
+        &:nth-of-type(2) {
+          margin-left: 53px;
+        }
+      }
+    }
+    &__info,
+    &__other {
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+      @include sp {
+        margin-top: 30px;
+      }
+      li {
+        background-color: #f6f6f6;
+        width: 48%;
+        @include sp {
+          width: 98%;
+          margin: 30px auto;
+        }
+        margin-top: 49px;
+        display: flex;
+        padding: 15px 0;
+        img {
+          width: 100px;
+        }
+      }
+      &-right {
+        margin-left: 30px;
+        p {
+          margin-right: 40px;
+        }
+        br {
+          @include pc2 {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__info {
+      display: flex;
+    }
+    &__other {
+      display: none;
+    }
+  }
+  &4 {
+    background-image: url(../../画像/img/bg.jpg);
+    margin-top: 60px;
+    padding: 60px 0 110px 0;
+    h1 {
+      text-align: center;
+    }
+  }
+  &5 {
+    text-align: center;
+    padding: 91.5px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    margin: 95.5px;
+    @include pc4 {
+      margin-top: 400px;
+    }
+    @include sp {
+      padding: 91.5px 0 0 0;
+      margin: 10px 10px 91.5px 10px;
+      margin-top: 200px;
+    }
+    h8 {
+      @include sp2 {
+        font-size: 2rem;
+      }
+    }
+
+    dl {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      border-top: 1px solid #e7e7e7;
+      dt {
+        width: 30%;
+        padding: 20px 0;
+        border-top: 1px solid #e7e7e7;
+        text-align: start;
+        &:nth-of-type(3) {
+          border-bottom: 1px solid #e7e7e7;
+          @include sp2 {
+            border-bottom: none;
+          }
+        }
+        @include sp2 {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      dd {
+        width: 70%;
+        padding: 20px 0;
+        text-align: start;
+        border-top: 1px solid #e7e7e7;
+        &:nth-of-type(3) {
+          border-bottom: 1px solid #e7e7e7;
+        }
+        @include sp2 {
+          width: 100%;
+          border-top: none;
+        }
+      }
+    }
+  }
+  &__address {
+    &-2colum {
+      width: 100%;
+      display: flex;
+      @include sp {
+        flex-direction: column;
+      }
+      margin-top: 50px;
+      height: 480px;
+      img {
+        width: 55%;
+        @include sp {
+          width: 100%;
+        }
+      }
+    }
+    &-right {
+      margin-left: 5%;
+      h5,
+      p {
+        margin-top: 24px;
+      }
+      p {
+        width: 120%;
+        br {
+          display: none;
+        }
+        @include pc3 {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__section {
+    width: 46%;
+    margin-top: 20px;
+    h1 {
+      margin-left: 5%;
+      @include pc3 {
+        font-size: 2.8rem;
+      }
+      @include tab {
+        text-align: center;
+        margin-left: 0;
+      }
+      @include sp {
+        font-size: 2rem;
+      }
+    }
+    p {
+      margin-left: 5%;
+      @include pc3 {
+        br {
+          display: none;
+        }
+      }
+
+      @include sp {
+        font-size: 1.4rem;
+      }
+    }
+
+    @include tab {
+      width: 100%;
+    }
+
+    &2 {
+      h1 {
+        @include pc3 {
+          font-size: 2.8rem;
+        }
+        @include tab {
+          text-align: center;
+        }
+        @include sp {
+          font-size: 2rem;
+        }
+      }
+      margin-left: 12%;
+      margin-top: 20px;
+      @include pc2 {
+        margin-left: 5%;
+      }
+    }
+  }
+}

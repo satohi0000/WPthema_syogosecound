@@ -1,0 +1,44 @@
+@use "../global" as *;
+
+.p-nav {
+  &-list {
+    display: flex;
+
+    @include tab {
+      display: none;
+    }
+    &-item1 {
+      margin-left: 30px;
+    }
+  }
+  &-list2 {
+    display: none;
+    @include tab {
+      display: flex;
+      position: fixed;
+      top: 100px;
+      left: -300px;
+      width: 300px;
+      color: #fff;
+      padding: 50px 55px;
+      transition: all 0.5s;
+      z-index: 120;
+      opacity: 0;
+    }
+  }
+  &-item2 {
+    @include tab {
+      margin-right: 55px;
+      margin-top: 50px;
+      > a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.open {
+  left: 0;
+  opacity: 1;
+  flex-direction: column;
+}

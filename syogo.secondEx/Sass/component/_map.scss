@@ -1,0 +1,12 @@
+@use "../global" as *;
+
+.c-gmap {
+  margin-top: 40px;
+  margin-left: 17%;
+  @include sp {
+    margin: 272px 0 0 4%;
+    transform: translateX(0);
+    width: 93%;
+    height: 300px;
+  }
+}

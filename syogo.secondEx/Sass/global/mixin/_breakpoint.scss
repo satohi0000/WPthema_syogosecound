@@ -1,0 +1,40 @@
+$pc2: 1071px;
+@mixin pc2 {
+  @media (max-width: ($pc2)) {
+    @content;
+  }
+}
+
+$pc3: 1400px;
+@mixin pc3 {
+  @media (max-width: ($pc3)) {
+    @content;
+  }
+}
+$pc4: 1130px;
+@mixin pc4 {
+  @media (max-width: ($pc4)) {
+    @content;
+  }
+}
+
+$tab: 881px;
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+$sp: 599px;
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+$sp2: 400px;
+@mixin sp2 {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}

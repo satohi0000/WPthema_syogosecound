@@ -1,0 +1,176 @@
+@use "../global" as *;
+
+.p-fv {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  z-index: -1;
+  @include tab {
+    flex-direction: column-reverse;
+  }
+  @include sp {
+  }
+  h6 {
+    position: absolute;
+    writing-mode: vertical-rl;
+    color: $white;
+    z-index: 20;
+    font-weight: 600;
+    &:nth-of-type(1) {
+      top: 20%;
+      left: 70%;
+      @include tab {
+        left: 78%;
+      }
+    }
+
+    &:nth-of-type(2) {
+      top: 20%;
+      left: 65%;
+    }
+  }
+
+  &-right {
+    position: relative;
+    width: 97%;
+
+    overflow: hidden;
+    padding-left: 100px;
+
+    @include tab {
+      padding-left: 0;
+      overflow: unset;
+    }
+    @include sp {
+      display: none;
+    }
+    &1,
+    &2 {
+      position: absolute;
+      @include sp {
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+    &1 {
+      width: 106%;
+      z-index: -1;
+      transform: translate(0%, -17%);
+
+      @include tab {
+        transform: translate(77%, -29%);
+      }
+      @include sp {
+        width: 300px;
+        height: 300px;
+        transform: translate(3%, 8%);
+      }
+    }
+    &2 {
+      width: 81%;
+      max-width: 470px;
+      z-index: -1;
+      transform: translate(-24%, 27%);
+      @include tab {
+        transform: translate(66%, 35%);
+      }
+      @include sp {
+        width: 100%;
+        height: 200px;
+        transform: translate(54%, 72%);
+      }
+    }
+    &-res {
+      display: none;
+      @include sp {
+        display: flex;
+        margin: 5px auto;
+        width: 97%;
+      }
+    }
+  }
+  &-left {
+    width: 50%;
+    @include tab {
+      width: 100%;
+    }
+
+    h1,
+    p,
+    button {
+      margin-left: 27.5%;
+      width: 70%;
+
+      @include tab {
+        margin-left: 28.5%;
+        width: 53%;
+      }
+      @include sp {
+        margin: 0 auto;
+        width: 73%;
+      }
+    }
+
+    h1 {
+      margin-top: 152px;
+      @include pc2 {
+        font-size: 2.7rem;
+      }
+      @include tab {
+        margin-top: 368px;
+      }
+      @include sp {
+        margin-top: 0;
+      }
+    }
+    p {
+      margin-top: 21px;
+      width: 72%;
+      @include tab {
+        width: 50%;
+      }
+      @include sp {
+        width: 70%;
+      }
+      br {
+        @include sp {
+          display: none;
+        }
+      }
+      @include f_style2(1.6, 27, 0);
+      font-weight: 700;
+    }
+    button {
+      width: 30%;
+      @include pc3 {
+        width: 38%;
+      }
+      margin-top: 35px;
+      @include sp {
+        justify-content: center;
+        width: 66%;
+        margin-left: 13%;
+      }
+    }
+  }
+  &2 {
+    height: 500px;
+    position: relative;
+    img {
+      height: 100%;
+      position: absolute;
+    }
+    h6 {
+      position: absolute;
+      top: 47%;
+      left: 46%;
+      @include pc3 {
+        left: 46%;
+      }
+      @include sp {
+        left: 35%;
+      }
+    }
+  }
+}

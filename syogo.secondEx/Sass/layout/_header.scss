@@ -1,0 +1,103 @@
+@use "../global" as *;
+
+.l-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+    &-left {
+      display: flex;
+      margin-right: 7px;
+      a {
+        color: $white;
+      }
+      img {
+        margin-top: 10px;
+        margin-left: 2px;
+        width: 200px;
+        height: 40px;
+        @include sp {
+          width: 125px;
+          height: 25px;
+        }
+      }
+    }
+
+    &-right {
+      @include tab {
+        display: flex;
+        width: 250px;
+        justify-content: space-between;
+      }
+    }
+  }
+  &-nav {
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 16px;
+    @include sp {
+      margin-left: 0px;
+    }
+  }
+  &__connect {
+    margin-top: 12px;
+    margin-right: 20px;
+    p {
+      font-size: 1.4rem;
+      margin-right: 5px;
+      white-space: nowrap;
+      @include sp {
+        text-align: center;
+      }
+    }
+    &-tel {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8px;
+      @include sp {
+        justify-content: center;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+        @include sp {
+          width: 35px;
+          height: 35px;
+          margin: 0 2% 0 0;
+        }
+        margin: 0 5% 0 0;
+      }
+      h4 {
+        @include sp {
+          margin: auto 0;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+.is-fixed,
+.is-fixed3 {
+  position: fixed;
+
+  background-color: white;
+  height: 80px;
+  @include sp {
+    height: 60px;
+  }
+  width: 100%;
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.is-fixed2,
+.is-fixed4 {
+  filter: invert(100%);
+}

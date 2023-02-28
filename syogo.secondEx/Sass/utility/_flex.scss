@@ -1,0 +1,15 @@
+@use "../global" as *;
+
+.u-flex_r {
+  flex-direction: row-reverse;
+  @include tab {
+    flex-direction: column;
+  }
+}
+
+.u-flex_df {
+  display: flex;
+}
+.u-flex__no {
+  display: none;
+}

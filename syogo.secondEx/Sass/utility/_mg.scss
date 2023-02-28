@@ -1,0 +1,39 @@
+@use "../global" as *;
+
+.u-mg {
+  margin: 150px 0;
+  @include pc4 {
+    margin: 370px 0;
+  }
+  @include sp {
+    margin: 120px 0;
+  }
+}
+.u-mg2 {
+  margin-top: 20px;
+}
+
+.u-mg3 {
+  margin-top: 28px;
+  margin-left: 42%;
+  @include tab {
+    margin-left: 0;
+  }
+  margin-bottom: 35px;
+}
+
+.u-center {
+  text-align: center;
+  @include sp {
+    font-size: 1.4rem;
+  }
+  @include sp2 {
+    font-size: 1.2rem;
+  }
+  margin-top: 98px;
+  br {
+    @include sp2 {
+      display: none;
+    }
+  }
+}

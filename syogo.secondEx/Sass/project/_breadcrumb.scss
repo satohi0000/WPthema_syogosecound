@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+.breadcrumb {
+  margin-top: 15px;
+  display: flex;
+  &-list {
+    display: flex;
+  }
+}

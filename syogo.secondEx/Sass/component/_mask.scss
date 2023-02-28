@@ -1,0 +1,21 @@
+@use "../global" as *;
+
+.p-mask {
+  display: none;
+}
+.open1 {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.9;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.no_scroll {
+  overflow: hidden;
+}

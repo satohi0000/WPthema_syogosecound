@@ -1,0 +1,23 @@
+@mixin f_style1($pixels, $height: false, $spacing: false) {
+  font-size: $pixels * 1px;
+
+  @if $height {
+    line-height: calc($height / $pixels);
+  }
+
+  @if $spacing {
+    letter-spacing: calc($spacing / 1000) * 1em;
+  }
+}
+
+@mixin f_style2($pixels, $height: false, $spacing: false) {
+  font-size: $pixels * 1rem;
+
+  @if $height {
+    line-height: calc($height / $pixels / 10);
+  }
+
+  @if $spacing {
+    letter-spacing: calc($spacing / 1000) * 1em;
+  }
+}

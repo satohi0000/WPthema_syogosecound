@@ -1,0 +1,17 @@
+@use "../global" as *;
+
+.c-mark {
+  width: 57px;
+  height: 16px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0c449b;
+  padding: 6px 0px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  line-height: 1;
+  white-space: nowrap;
+  border-radius: 8px;
+}

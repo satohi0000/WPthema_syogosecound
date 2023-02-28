@@ -1,0 +1,73 @@
+@use "../global" as *;
+
+.c-form {
+  &__error-message1,
+  &__error-message2,
+  &__error-message3,
+  &__end-message,
+  &__false-message {
+    display: none;
+    color: red !important;
+    text-align: start !important;
+    padding-bottom: 20px;
+  }
+  &-wrapper {
+    margin: 0 auto;
+    margin-top: 34px;
+
+    max-width: 900px;
+    background-color: $white;
+  }
+  &__box {
+    padding-top: 36px;
+    padding-left: 3%;
+    text-align: start;
+    &-title {
+      display: flex;
+    }
+    &-input {
+      &1 {
+        margin-top: 34px;
+        height: 39px;
+        width: 45%;
+        @include sp {
+          width: 100%;
+        }
+        border: none;
+        background-color: #eefbfb;
+        text-align: none;
+      }
+      &2 {
+        margin-top: 34px;
+        height: 175px;
+        width: 97%;
+        border: none;
+        background-color: #eefbfb;
+      }
+    }
+    &2 {
+      text-align: start;
+      padding-top: 30px;
+      padding-left: 3%;
+    }
+    &3 {
+      text-align: start;
+      padding-top: 23px;
+      padding-left: 3%;
+    }
+    &4 {
+      padding-top: 23px;
+      padding-left: 3%;
+      text-align: center;
+      label {
+        font-size: 1.6rem;
+      }
+      &-check {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

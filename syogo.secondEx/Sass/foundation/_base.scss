@@ -1,0 +1,64 @@
+@use "../global" as *;
+
+body {
+  background-color: $background;
+  color: $black;
+  list-style: none;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  li {
+    @include f_style2(1.6, 32, 0);
+  }
+  a {
+    color: $black;
+    cursor: pointer;
+  }
+  h1 {
+    @include f_style2(3.6, 62, 0);
+  }
+  h2 {
+    @include f_style2(2.8, 42, 0);
+  }
+  h3 {
+    @include f_style2(2.2, 32, 0);
+  }
+  h4 {
+    @include f_style2(2, 32, 0);
+  }
+  h5 {
+    @include f_style2(1.6, 32, 0);
+  }
+  h6 {
+    @include f_style2(3.4, 42, 0);
+    color: $white;
+  }
+  h7 {
+    @include f_style2(2.4, 32, 0);
+  }
+  h8 {
+    @include f_style2(2.6, 32, 0);
+  }
+
+  label {
+    @include f_style2(1.6, 26, 0);
+    @include sp {
+      font-size: 1.2rem;
+    }
+  }
+  p {
+    @include f_style2(1.6, 32, 0);
+  }
+  dt,
+  dd {
+    @include f_style2(1.5, 32, 0);
+  }
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", "Noto Serif JP", serif;
+}
+
+.hidden {
+  overflow-x: hidden;
+}

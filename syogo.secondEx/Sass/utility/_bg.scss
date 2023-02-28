@@ -1,0 +1,25 @@
+@use "../global" as *;
+
+.u-bg {
+  background-color: #eefbfb;
+  padding: 54px 0 66px 0;
+  margin-top: 109px;
+
+  > p {
+    text-align: center;
+
+    margin-top: 42px;
+  }
+  &2 {
+    margin-top: 63px;
+    background-color: #eefbfb;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  &3 {
+    margin-top: 100px;
+    background: linear-gradient(90deg, #05a5fa, #63fbd7);
+    padding-top: 50px;
+    padding-bottom: 67px;
+  }
+}

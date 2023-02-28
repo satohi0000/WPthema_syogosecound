@@ -1,0 +1,24 @@
+@use "../global" as *;
+
+.l-contents {
+  padding: 0 5px;
+  &__article {
+    &-sentence {
+      margin-top: 150px;
+      margin-right: 20%;
+      @include pc2 {
+        margin-right: 7%;
+      }
+
+      @include sp {
+        margin-right: 3%;
+        margin-left: 10%;
+        margin-top: 25px;
+      }
+
+      p {
+        letter-spacing: 0.8rem;
+      }
+    }
+  }
+}

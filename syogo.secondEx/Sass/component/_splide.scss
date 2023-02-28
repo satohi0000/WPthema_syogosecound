@@ -1,0 +1,17 @@
+@use "../global" as *;
+
+.splide {
+  margin: 0 auto;
+  max-height: 1079px;
+  &__pagination,
+  &__arrow {
+    display: none !important;
+  }
+  &__slide {
+    max-height: 1079px;
+    img {
+      height: 100vh;
+      zoom: 63%;
+    }
+  }
+}
